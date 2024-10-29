@@ -11,11 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-jsdom-global": "^4.0.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
+    "jest-location-mock": "^1.0.9",
     "typescript": "^5.6.3"
   }
 }

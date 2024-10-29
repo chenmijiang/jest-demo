@@ -1,18 +1,21 @@
+import { Button } from "antd";
 import React from "react";
 
-interface Props {
-  name: string;
-}
-
-class App extends React.Component<Props> {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <h1 className="text-4xl text-white bg-black">Hello {name}</h1>
-      </>
-    );
-  }
-}
+const App = () => {
+  const [count, setCount] = React.useState(0);
+  return (
+    <div className="flex bg-slate-100">
+      <h1>Hello, React!</h1>
+      <Button
+        type="primary"
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        click me: {count}
+      </Button>
+    </div>
+  );
+};
 
 export default App;

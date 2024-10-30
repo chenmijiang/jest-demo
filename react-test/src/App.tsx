@@ -4,7 +4,7 @@ import React from "react";
 const App = () => {
   const [count, setCount] = React.useState(0);
   return (
-    <div className="flex bg-slate-100">
+    <div className="flex gap-1 flex-col">
       <h1>Hello, React!</h1>
       <Button
         type="primary"
